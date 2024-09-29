@@ -24,5 +24,5 @@ TC ASSIGNMENT 20 - TAGS 3
 
 # *********** How to run
     # command is: robot --include smoke .
-    # command is: robot -i smoke TC_assignment_20.robot    [note: Cd to path]
+    # command is: robot -i smoke TC_assignment_20.robot    [note: cd to path (Repository/doppio_basic_robot_2024/Testcase/Special_assignment)]
     
