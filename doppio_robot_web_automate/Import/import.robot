@@ -6,8 +6,19 @@ Library    String
 
 
 # Keywords
-Resource    ${CURDIR}/../Keywords/common_keyword.robot
-Resource    ${CURDIR}/../Keywords/robot_web_automation/robot_web_automation_keyword.robot
+Resource    ${CURDIR}/../Keywords/Common_keyword.robot    # robotcode: ignore
+Resource    ${CURDIR}/../Keywords/page/Login_keyword.robot    # robotcode: ignore
+Resource    ${CURDIR}/../Keywords/page/Registration_keyword.robot
 
 # Locator
-Resource    ${CURDIR}/../Locator/robot_web_automatio/robot_web_automation_loc.robot
+Resource    ${CURDIR}/../Locator/Login_locator.robot
+Resource    ${CURDIR}/../Locator/Registration_locator.robot
+
+# yaml
+Variables    ${CURDIR}/../Resource/Setting/${env}/env_config.yaml
+Variables    ${CURDIR}/../Resource/Data/verify.yaml
+Variables    ${CURDIR}/../Resource/Data/testdata.yaml
+
+
+*** Variables ***
+${env}=    uat    # default

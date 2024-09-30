@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2024-09-30T22:18:43.017855" rpa="false" schemaversion="5">
+<suite id="s1" name="TC robot web automation" source="/Users/igollfs/Documents/Automate Projects/Doppio/Repository/doppio_robot_web_automate/Testcase/TC_robot_web_automation.robot">
+<test id="s1-t1" name="OPEN WEBSITE DOPPEE REGIS AND REGISTER" line="8">
+<kw name="ROBOT WEB AT - OPEN DOPPEE" owner="Common_keyword">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-30T22:18:43.287275" level="WARN">https://doppee.doppio-tech.com/</msg>
+<arg>${url_env}</arg>
+<arg>WARN</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-30T22:18:43.287006" elapsed="0.000437"/>
+</kw>
+<status status="PASS" start="2024-09-30T22:18:43.285390" elapsed="0.002231"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-30T22:18:45.289135" level="INFO">Slept 2 seconds.</msg>
+<arg>02s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-30T22:18:43.287909" elapsed="2.001429"/>
+</kw>
+<status status="PASS" start="2024-09-30T22:18:43.284632" elapsed="2.004984"/>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-09-30T22:18:45.290755" elapsed="0.000347"/>
+</kw>
+<status status="PASS" start="2024-09-30T22:18:43.020133" elapsed="2.271105"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC robot web automation">TC robot web automation</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-30T22:18:43.287275" level="WARN">https://doppee.doppio-tech.com/</msg>
+</errors>
+</robot>

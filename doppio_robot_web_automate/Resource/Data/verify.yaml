@@ -1,0 +1,5 @@
+text_login_page:
+  verify_text_title: Doppee
+
+text_regis_page:
+  verify_text_title: Registration

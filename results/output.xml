@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2024-09-30T23:44:21.909766" rpa="false" schemaversion="5">
+<suite id="s1" name="Repository" source="/Users/igollfs/Documents/Automate Projects/Doppio/Repository">
+<suite id="s1-s1" name="Doppio Robot Web Automate" source="/Users/igollfs/Documents/Automate Projects/Doppio/Repository/doppio_robot_web_automate">
+<suite id="s1-s1-s1" name="Testcase" source="/Users/igollfs/Documents/Automate Projects/Doppio/Repository/doppio_robot_web_automate/Testcase">
+<suite id="s1-s1-s1-s1" name="TC robot web automation" source="/Users/igollfs/Documents/Automate Projects/Doppio/Repository/doppio_robot_web_automate/Testcase/TC_robot_web_automation.robot">
+<test id="s1-s1-s1-s1-t1" name="OPEN WEBSITE DOPPEE REGIS AND REGISTER" line="8">
+<kw name="COMMON - OPEN WEBSITE" owner="Common_keyword">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-30T23:44:22.335380" level="INFO">Opening browser 'chrome' to base url 'https://training-platform.doppio-tech.com/'.</msg>
+<arg>${url_env}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-30T23:44:22.334946" elapsed="2.908471"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-30T23:44:25.244189" elapsed="0.413318"/>
+</kw>
+<status status="PASS" start="2024-09-30T23:44:22.333633" elapsed="3.324473"/>
+</kw>
+<kw name="CLICK ICON USER LOGIN" owner="Login_keyword">
+<kw name="COMMON - WAIT ELEMENT AND CLICK ELEMENT" owner="Common_keyword">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-30T23:44:25.670656" elapsed="0.040660"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-30T23:44:25.711680" elapsed="0.277730"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-30T23:44:25.990843" level="INFO">Clicking element 'xpath=//header[@class='ant-layout-header header']//span[@class='anticon anticon-user icon-size']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-30T23:44:25.990431" elapsed="0.110571"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>SeleniumLibrary.Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-30T23:44:25.989956" elapsed="0.111336"/>
+</kw>
+<arg>locator=${login.icon_user_locator}</arg>
+<status status="PASS" start="2024-09-30T23:44:25.662443" elapsed="0.439104"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${text_login_page}[verify_text_title]</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-30T23:44:26.101922" elapsed="0.016680"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-30T23:44:28.120239" level="INFO">Slept 2 seconds.</msg>
+<arg>02s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-30T23:44:26.118928" elapsed="2.001808"/>
+</kw>
+<status status="PASS" start="2024-09-30T23:44:25.660209" elapsed="2.461005"/>
+</kw>
+<kw name="CLICK THE BUTTON SIGN UP ON THE PAGE LOGIN" owner="Login_keyword">
+<kw name="COMMON - WAIT ELEMENT AND CLICK ELEMENT" owner="Common_keyword">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${time}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-30T23:44:28.125230" elapsed="0.025965"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-09-30T23:44:28.151460" elapsed="0.265657"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-30T23:44:28.418911" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-default button-login']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-30T23:44:28.418392" elapsed="0.080012"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>SeleniumLibrary.Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-09-30T23:44:28.417641" elapsed="0.080993"/>
+</kw>
+<arg>locator=${login.btn_sign_up_locator}</arg>
+<status status="PASS" start="2024-09-30T23:44:28.123824" elapsed="0.375041"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${text_regis_page}[verify_text_title]</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-30T23:44:28.499101" elapsed="0.012362"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-30T23:44:30.514126" level="INFO">Slept 2 seconds.</msg>
+<arg>02s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-30T23:44:28.511736" elapsed="2.002941"/>
+</kw>
+<status status="PASS" start="2024-09-30T23:44:28.122346" elapsed="2.392864"/>
+</kw>
+<kw name="INPUT EMAL ADDRESS FOR REGISTER" owner="Registration_keyword">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${regis.input_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-30T23:44:30.517973" elapsed="0.020980"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-30T23:44:30.539706" level="INFO">Typing text 'golfs_001@gmail.com' into text field 'id=basic_username'.</msg>
+<arg>${regis.input_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-30T23:44:30.539284" elapsed="0.306413"/>
+</kw>
+<arg>${registration}[email]</arg>
+<status status="PASS" start="2024-09-30T23:44:30.516752" elapsed="0.329150"/>
+</kw>
+<kw name="INPUT PASSWORD FOR REGISTER" owner="Registration_keyword">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${regis.input_pass}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-30T23:44:30.846678" elapsed="0.017777"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-30T23:44:30.865127" level="INFO">Typing text 'P@ssw0rd' into text field 'id=basic_password'.</msg>
+<arg>${regis.input_pass}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-30T23:44:30.864731" elapsed="0.114807"/>
+</kw>
+<arg>${registration}[password]</arg>
+<status status="PASS" start="2024-09-30T23:44:30.846205" elapsed="0.133798"/>
+</kw>
+<kw name="INPUT CONFIRM PASSWORD FOR REGISTER" owner="Registration_keyword">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${regis.input_confirm_pass}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-30T23:44:30.981996" elapsed="0.135280"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-30T23:44:31.118237" level="INFO">Typing text 'P@ssw0rd' into text field 'id=basic_confirmPassword'.</msg>
+<arg>${regis.input_confirm_pass}</arg>
+<arg>${confirm_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-30T23:44:31.117826" elapsed="0.117538"/>
+</kw>
+<arg>${registration}[confirm_password]</arg>
+<status status="PASS" start="2024-09-30T23:44:30.981116" elapsed="0.254551"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-30T23:44:33.237362" level="INFO">Slept 2 seconds.</msg>
+<arg>02s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-30T23:44:31.236622" elapsed="2.001685"/>
+</kw>
+<status status="PASS" start="2024-09-30T23:44:22.332372" elapsed="10.906776"/>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-09-30T23:44:33.241965" elapsed="0.222799"/>
+</kw>
+<status status="PASS" start="2024-09-30T23:44:21.949439" elapsed="11.515595"/>
+</suite>
+<status status="PASS" start="2024-09-30T23:44:21.947248" elapsed="11.521912"/>
+</suite>
+<status status="PASS" start="2024-09-30T23:44:21.945297" elapsed="11.525638"/>
+</suite>
+<status status="PASS" start="2024-09-30T23:44:21.915608" elapsed="11.556793"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Repository">Repository</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Doppio Robot Web Automate">Repository.Doppio Robot Web Automate</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Testcase">Repository.Doppio Robot Web Automate.Testcase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="TC robot web automation">Repository.Doppio Robot Web Automate.Testcase.TC robot web automation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
