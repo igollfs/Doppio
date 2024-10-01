@@ -6,9 +6,9 @@ Resource    ${CURDIR}/../../Import/import.robot
 
 TC ASSIGNMENT 1 - SC01
     [Documentation]    Validate age <=18
-    Spacial_asgmt_kw.VALIDATE AGE    16    # Input age number
+    Spacial_asgmt_kw.Validate age    16    # Input age number
 
 
 TC ASSIGNMENT 1 - SC02
     [Documentation]    Validate age <=18
-    Spacial_asgmt_kw.VALIDATE AGE    20    # Input age number
+    Spacial_asgmt_kw.Validate age    20    # Input age number

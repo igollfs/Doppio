@@ -1,4 +1,19 @@
 registration:
-  email: golfs_001@gmail.com
+  email: golfs_007@gmail.com
   password: P@ssw0rd
   confirm_password: P@ssw0rd
+
+data_test:
+  search_keyword: phone
+
+phone_collections_name_locator:
+  collection_phone_01: AEoppee phone
+  collection_phone_02: Coppee phone 1
+  collection_phone_03: Aoppee phone
+  collection_phone_04: Doppee phone
+
+delivery_info:
+  name: igollfs
+  surname: automate
+  shipping_address: 123/456 bangkok 10230
+  phone_number: 0987777777

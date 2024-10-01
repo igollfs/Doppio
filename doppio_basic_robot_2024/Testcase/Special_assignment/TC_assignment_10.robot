@@ -6,7 +6,7 @@ Resource    ${CURDIR}/../../Import/import.robot
 
 TC ASSIGNMENT 10
     [Documentation]    Return to List
-    ${fruits}    Spacial_asgmt_kw.CREATE FRUIT LIST
+    ${fruits}    Spacial_asgmt_kw.Create fruit list
     BuiltIn.Log    ${fruits}[0]    WARN
     BuiltIn.Log    ${fruits}[1]    WARN
     BuiltIn.Log    ${fruits}[2]    WARN

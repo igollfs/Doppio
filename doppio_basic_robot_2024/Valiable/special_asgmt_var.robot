@@ -12,4 +12,4 @@ ${yaml_user_age}     ${yaml_user}[age]
 ${yaml_user_city}    ${yaml_user}[city]
 
 # global
-${GLOBAL_VAR}    # global TC_assignment_06
+${Global_var}    # global TC_assignment_06

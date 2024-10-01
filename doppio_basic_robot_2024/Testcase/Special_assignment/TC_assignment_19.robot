@@ -9,4 +9,4 @@ TC ASSIGNMENT 19
     [Documentation]     Teardown in Keyword, Test Case, and Suite
     [Teardown]    BuiltIn.Log    Test Case Teardown is running    WARN
     BuiltIn.Log    Running the test    WARN
-    Spacial_asgmt_kw.KEYWORD WITH TEARDOWN
+    Spacial_asgmt_kw.Keyword with teardown

@@ -4,7 +4,7 @@ Resource    ${CURDIR}/../../Import/import.robot
 
 *** Keywords ***
 
-CALCULATE GRADE
+Calulate grade
     [Arguments]    ${score}        
             
         IF  ${score}>=101
@@ -28,7 +28,7 @@ CALCULATE GRADE
         END
                 
 
-VALIDATE INPUT NUMBER
+Validate input number
     [Arguments]    ${number_score}
     
     ${is_number}=    BuiltIn.Run Keyword And Return Status    BuiltIn.Convert To Number    ${number_score}

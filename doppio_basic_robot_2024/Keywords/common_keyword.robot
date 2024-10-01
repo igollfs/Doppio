@@ -3,7 +3,7 @@ Resource    ${CURDIR}/../Import/import.robot
 
 *** Keywords ***
 
-WAIT ELEMENT AND CLICK LOCATOR
+Wait element and click locator
     [Arguments]    ${locator}    ${time}=15s
     SeleniumLibrary.Wait Until Element Is Visible    ${locator}    ${time}
     SeleniumLibrary.Scroll Element Into View    ${locator}

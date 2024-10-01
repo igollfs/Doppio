@@ -6,4 +6,4 @@ Resource    ${CURDIR}/../../Import/import.robot
 
 TC ASSIGNMENT 5
     [Documentation]    args no limit
-    Spacial_asgmt_kw.PRINT ALL ITEM    @{fruits}
+    Spacial_asgmt_kw.Print all item    @{fruits}

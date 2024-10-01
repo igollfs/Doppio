@@ -1,5 +1,10 @@
 text_login_page:
   verify_text_title: Doppee
+  verify_text_popup_login_success: Login successfully
 
 text_regis_page:
   verify_text_title: Registration
+  verify_text_popup_regis_success: Register successfully
+
+text_add_to_card:
+  verify_text_modal_success: Add product successfully

@@ -6,4 +6,4 @@ Resource    ${CURDIR}/../../Import/import.robot
 
 TC ASSIGNMENT 2
     [Documentation]    For Loop list fruits
-    Spacial_asgmt_kw.PRINT FRUITS    banana    # Input fruits name
+    Spacial_asgmt_kw.Print fruits    banana    # Input fruits name

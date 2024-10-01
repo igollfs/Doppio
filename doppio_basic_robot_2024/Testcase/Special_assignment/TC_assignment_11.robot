@@ -6,7 +6,7 @@ Resource    ${CURDIR}/../../Import/import.robot
 
 TC ASSIGNMENT 11
     [Documentation]    Return to Dictionary
-    &{user}=    Spacial_asgmt_kw.CREATE USER INFO
+    &{user}=    Spacial_asgmt_kw.Create user info
     BuiltIn.Log    name: ${user}[name]    WARN
     BuiltIn.Log    age: ${user}[age]      WARN
     BuiltIn.Log    city: ${user}[city]    WARN

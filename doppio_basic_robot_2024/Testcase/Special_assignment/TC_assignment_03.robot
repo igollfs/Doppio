@@ -6,4 +6,4 @@ Resource    ${CURDIR}/../../Import/import.robot
 
 TC ASSIGNMENT 3
     [Documentation]    Dictionary
-    Spacial_asgmt_kw.PRINT USER INFO    &{user_info}
+    Spacial_asgmt_kw.Print user info    &{user_info}
