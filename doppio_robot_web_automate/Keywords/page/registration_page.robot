@@ -24,7 +24,7 @@ Input confirm password for register
 
 Click btn sign up
     common_keyword.Wait element and click element    locator=${regis.btn_signup}
-        common_keyword.Verify modal confirm ms
+        common_keyword.Verify modal confirm message and click button ok
         ...    locator=${common.modal_confirm_content_ms_locator}    
         ...    message_ver=${text_regis_page}[verify_text_popup_regis_success]    
         ...    message_log_fail=Register not complete!    

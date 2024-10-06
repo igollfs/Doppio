@@ -3,7 +3,11 @@ Resource    ${CURDIR}/../../Import/import.robot
 
 *** Keywords ***
 
-
+Set global timeout
+    ${timeout}    BuiltIn.Set Variable    ${global_timeout}
+    BuiltIn.Set Global Variable    ${timeout}
+    
+    
 Set feature - open website and click the icon user login
     common_keyword.Open Website
     home_search_page.Click icon user login
@@ -21,6 +25,7 @@ set feature - login web doppee
     [Arguments]    ${username}    ${password}
     login_page.Input username for login    ${username}
     login_page.Input password for login    ${password}
+
 
 Set feature - click logout form page account
     home_search_page.CLICK ICON USER LOGIN

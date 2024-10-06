@@ -8,3 +8,7 @@ text_regis_page:
 
 text_add_to_card:
   verify_text_modal_success: Add product successfully
+
+text_payment_page:
+  verify_text_payment_success: Payment successfully
+  verify_text_payment_complete:  Payment Complete

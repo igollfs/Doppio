@@ -17,17 +17,19 @@ Input text to field search
 
 
 Click btn search
-    common_keyword.Wait element and click element    ${homesrc.btn_search_locator}    
+    common_keyword.Wait element and click element    ${homesrc.btn_search_locator}
+    BuiltIn.Sleep    ${global_timeout}
 
 
 Select item collection for add to card
     ${rep_done}    common_keyword.Replace text to locator    ${homesrc.select_phone_item_locator}    ${phone_collections_name_locator}[collection_phone_03]
     common_keyword.Wait element and click element    ${rep_done}
+    BuiltIn.Sleep    ${global_timeout}
 
 
-Click btn add to card
+Click the button add to cart
     common_keyword.Wait element and click element    ${homesrc.btn_add_to_cart_locator}
-        common_keyword.Verify modal confirm ms
+        common_keyword.Verify modal confirm message and click button ok
         ...    locator=${common.modal_confirm_content_ms_locator}    
         ...    message_ver=${text_add_to_card}[verify_text_modal_success]    
         ...    message_log_fail=add to card not complete!
