@@ -22,7 +22,8 @@ Click btn search
 
 
 Select item collection for add to card
-    ${rep_done}    common_keyword.Replace text to locator    ${homesrc.select_phone_item_locator}    ${phone_collections_name_locator}[collection_phone_03]
+    [Arguments]    ${scl_collection}
+    ${rep_done}    common_keyword.Replace text to locator    ${homesrc.select_phone_item_locator}    ${scl_collection}
     common_keyword.Wait element and click element    ${rep_done}
     BuiltIn.Sleep    ${global_timeout}
 
