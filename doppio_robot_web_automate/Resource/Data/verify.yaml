@@ -12,3 +12,9 @@ text_add_to_card:
 text_payment_page:
   verify_text_payment_success: Payment successfully
   verify_text_payment_complete:  Payment Complete
+
+text_account_page:
+  verify_text_my_order_status: Pending payment
+
+text_order_details:
+  verify_header_order_detail: Order detail

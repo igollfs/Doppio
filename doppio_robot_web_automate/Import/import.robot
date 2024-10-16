@@ -12,7 +12,9 @@ Resource    ${CURDIR}/../Keywords/page/login_page.robot
 Resource    ${CURDIR}/../Keywords/page/registration_page.robot
 Resource    ${CURDIR}/../Keywords/page/account_page.robot
 Resource    ${CURDIR}/../Keywords/page/delivery_info_page.robot
-Resource    ${CURDIR}/../Keywords//page/payment_page.robot
+Resource    ${CURDIR}/../Keywords/page/payment_page.robot
+Resource    ${CURDIR}/../Keywords/page/details_order_page.robot
+
 
 # Locator
 Resource    ${CURDIR}/../Locator/common_locator.robot
@@ -22,6 +24,7 @@ Resource    ${CURDIR}/../Locator/registration_locator.robot
 Resource    ${CURDIR}/../Locator/account_locator.robot
 Resource    ${CURDIR}/../Locator/delivery_info_locator.robot
 Resource    ${CURDIR}/../Locator/payment_locator.robot
+Resource    ${CURDIR}/../Locator/details_order_locator.robot
 
 # Feature
 Resource    ${CURDIR}/../Keywords/Feature/common_feature.robot

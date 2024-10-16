@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ${CURDIR}/../Import/import.robot
 Suite Setup    Common_feature.Set feature - open website and click the icon user login
-# Suite Teardown    SeleniumLibrary.Close All Browsers
+Suite Teardown    SeleniumLibrary.Close All Browsers
 Test Teardown    BuiltIn.Sleep    04s
 
 *** Test Cases ***
@@ -36,4 +36,6 @@ Login with the registered account and shopping phone
     payment_page.Click button confirm payment details
     payment_page.Verify payment complete message
     # payment_page.Get order id payment complete
-    # home_search_page.Click icon user login
+    home_search_page.Click icon user login
+    account_page.Click my order    timeout=10s
+    details_order_page.Verify payment status order details
