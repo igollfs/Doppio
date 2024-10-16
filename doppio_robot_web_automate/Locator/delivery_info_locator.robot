@@ -1,6 +1,7 @@
 *** Variables ***
 
 ${delivery.icon_shopee_cart_locator}         xpath=//header//span[@class='anticon anticon-shopping-cart icon-size']
+${delivery.text_hd_delivery_locator}         xpath=//div[@class='ant-card-body']/h2
 ${delivery.info_name_locator}                id=form_item_name
 ${delivery.info_surname_locator}             id=form_item_surName
 ${delivery.info_shipping_address_locator}    id=form_item_address

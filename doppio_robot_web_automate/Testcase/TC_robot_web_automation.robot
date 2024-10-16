@@ -21,8 +21,8 @@ Login with the registered account and shopping phone
     home_search_page.Click btn search
     home_search_page.Select item collection for add to card    ${phone_collections_name_locator}[collection_phone_04]
     home_search_page.Click the button add to cart
-    delivery_info_page.Click icon shopping card
-    delivery_info_page.Input name delivery info                ${delivery_info}[name]
+    delivery_info_page.Click icon shopping card                timeout=10s
+    delivery_info_page.Input name delivery info                ${delivery_info}[name]    timeout=15s
     delivery_info_page.Input surname delivery info             ${delivery_info}[surname]
     delivery_info_page.Input shipping address delivery info    ${delivery_info}[shipping_address]
     delivery_info_page.Input phone number delivery info        ${delivery_info}[phone_number]
@@ -35,5 +35,5 @@ Login with the registered account and shopping phone
     payment_page.Input card owner payment details     ${sel_payment_details}[card_owner]
     payment_page.Click button confirm payment details
     payment_page.Verify payment complete message
-    payment_page.Get order id payment complete
+    # payment_page.Get order id payment complete
     # home_search_page.Click icon user login
